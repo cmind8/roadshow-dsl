@@ -1,6 +1,6 @@
 job("${GITHUB_USER}.roadshow.generated.build") {
     scm {
-        git("git@github.com:${GITHUB_USER}/roadshow.git")
+        git("git@github.com:${GITHUB_USER}/roadshow-dsl.git")
     }
     triggers {
         scm('* * * * *')
@@ -19,7 +19,7 @@ job("${GITHUB_USER}.roadshow.generated.build") {
 
 job("${GITHUB_USER}.roadshow.generated.staticanalysis") {
     scm {
-        git("git@github.com:${GITHUB_USER}/roadshow.git")
+        git("git@github.com:${GITHUB_USER}/roadshow-dsl.git")
     }
     triggers {
         scm('* * * * *')
